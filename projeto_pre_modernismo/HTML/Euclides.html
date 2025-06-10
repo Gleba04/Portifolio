@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvorada Literária | Euclides da Cunha</title>
+    <link rel="stylesheet" href="../CSS/Euclides.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="container_menu">
+                <div class="logo">
+                    <h2><a href="../index.html">Alvorada Literária</a></h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a id="menu1" href="../index.html">início</a></li>
+                        <li><a id="menu2" href="../HTML/Obras.html">Obras</a></li>
+                        <li><a id="menu7" href="../HTML/serviços.html">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="juntar">
+                    <div class="icons">
+                        <div class="whatsapp">
+                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        </div>
+                    </div>
+                    <div class="acount">
+                        <div class="entrar">
+                            <a id="menu5" href="../HTML/Entrar.html">Entrar</a>
+                        </div>
+                        <div class="cadastrar">
+                            <a id="menu6" href="../HTML/cadastro.html">Cadastrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main id="conteudo">
+        <div class="audio">
+            <div class="audio-player">
+                <img id="img-audio" src="../IMG/logo.png" alt="Logo">
+                <div class="controls">
+                  <button id="playPauseBtn">▶</button>
+                  <input type="range" id="progressBar" value="0" min="0" max="100">
+                  <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                </div>
+                <audio id="meuAudio" src="../AUDIO/Text to Speech (17)_join.mp3"></audio>
+            </div>
+        </div>
+        <div class="content-main">
+            <h1 id="conteudo1">Quem foi Euclides da Cunha?</h1>
+            <div class="left-obras">
+                <div class="conteudo">
+                    <p id="conteudo2">Euclides Rodrigues da Cunha (1866–1909) foi um escritor, jornalista, engenheiro, professor, militar e sociólogo brasileiro. É mais conhecido por sua obra-prima "Os Sertões" (1902), uma análise profunda sobre o Brasil interiorano, especialmente sobre a Guerra de Canudos.</p>
+                    <p id="conteudo3">Ele é considerado um dos precursores do pré-modernismo brasileiro, por sua abordagem crítica, científica e literária da realidade nacional.</p>
+                </div>
+                <img src="../IMG/1.png" alt="">
+            </div>
+            <div class="left">
+                <h1 id="conteudo4">Principais áreas de atuação</h1>
+                <h2 id="conteudo5">1. Literatura e Jornalismo</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo6">Escrevia com forte influência do determinismo e do positivismo, correntes intelectuais do final do século XIX.</li>
+                        <li id="conteudo7">Misturava ciência, literatura e crítica social.</li>
+                        <li id="conteudo8">Como jornalista, foi enviado especial do jornal "O Estado de S. Paulo" para cobrir a Guerra de Canudos (1897).</li>
+                    </ul>
+                </nav>
+                <h2 id="conteudo9">2. Engenharia e Ciências Naturais</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo10">Formou-se pela Escola Militar da Praia Vermelha, e depois tornou-se engenheiro civil.</li>
+                        <li id="conteudo11">Era fascinado por geografia, geologia, antropologia, meteorologia e biologia.</li>
+                        <li id="conteudo12">Foi membro do Instituto Histórico e Geográfico Brasileiro.</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="left">
+                <h1 id="conteudo13">"Os Sertões" (1902)</h1>
+                <div class="img">
+                    <img src="../IMG/obra.png" alt="">
+                </div>
+                <h2 id="conteudo14">Estrutura da Obra:</h2>
+                <nav>
+                    <ol>
+                        <li id="conteudo15">A Terra – análise geológica e geográfica do sertão baiano.</li>
+                        <li id="conteudo16">O Homem – estudo antropológico sobre o sertanejo.</li>
+                        <li id="conteudo17">A Luta – descrição histórica e social da Guerra de Canudos.</li>
+                    </ol>
+                </nav>
+                <h2 id="conteudo18">Temas centrais:</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo19">Conflito entre o Brasil moderno (urbano) e o Brasil arcaico (sertanejo).</li>
+                        <li id="conteudo20">Visão crítica da ação do Exército e do Estado contra os seguidores de Antônio Conselheiro.</li>
+                        <li id="conteudo21">A luta entre civilização vs. barbárie — embora ele comece vendo os sertanejos como bárbaros, ao fim da obra demonstra empatia e crítica ao Estado.</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="left">
+                <h2 id="conteudo22">A Guerra de Canudos</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo23">Aconteceu no sertão da Bahia, liderada por Antônio Conselheiro, um líder religioso que atraiu milhares de sertanejos.</li>
+                        <li id="conteudo24">O governo considerou o movimento uma ameaça à República.</li>
+                        <li id="conteudo25">Euclides, inicialmente com visão militar, muda de perspectiva após ver a realidade do povo oprimido.</li>
+                        <li id="conteudo26">Foi o pano de fundo para "Os Sertões".</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="left">
+                <h2 id="conteudo27">Ideias e Filosofia</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo28">Influenciado pelo positivismo de Comte e o determinismo de Taine.</li>
+                        <li id="conteudo29">Acreditava que o meio geográfico, o clima e a raça moldavam o comportamento humano.</li>
+                        <li id="conteudo30">Mas suas experiências em Canudos abalaram essas crenças — tornando-o mais humano, menos cientificista.</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="left">
+                <h2 id="conteudo31">Morte trágica</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo32">Morreu em 1909, assassinado pelo amante de sua esposa.</li>
+                        <li id="conteudo33">Teve uma vida pessoal conturbada, e sua morte trágica marcou o fim precoce de uma mente brilhante.</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="conteudo">
+                <h1 id="conteudo34">Outras obras</h1>
+                <div class="left">
+                    <nav>
+                        <ul>
+                            <li id="conteudo35">"Contrastes e Confrontos" (1907) – coletânea de ensaios sobre política, ciência, literatura e sociedade.</li>
+                            <li id="conteudo36">"Peru Versus Bolívia" – estudo geopolítico sobre conflitos na América do Sul.</li>
+                            <li id="conteudo37">Textos e artigos publicados em jornais e revistas da época.</li>
+                        </ul>
+                    </nav>
+                    <div class="img">
+                        <img src="../IMG/obra (5).png" alt="">
+                        <img src="../IMG/obra (6).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <h2 id="conteudo38"> Legado</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo39">Um dos fundadores da literatura sociológica brasileira.</li>
+                        <li id="conteudo40">Influenciou o modernismo e autores como Graciliano Ramos, João Cabral de Melo Neto e Guimarães Rosa.</li>
+                        <li id="conteudo41">Tem obras estudadas até hoje nas escolas e universidades do Brasil.</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer-button">
+        <div class="footer-widget">
+            <div class="footer-top">
+            <div class="acessibilidade">
+                <h3 id="fim1"><i class='bx bx-universal-access' ></i> Acessibilidade</h3>
+                    <div class="traducao">
+                        <h4 id="fim2">Tradução</h4>
+                        <select name="traducao" id="languageSelector">
+                            <option value="pt">Português Brasil</option>
+                            <option value="en">English</option>
+                            <option value="es">Espanhol</option>
+                        </select>
+                    </div>
+                    <div class="tema">
+                        <h4 id="fim3">Tema</h4>
+                        <select name="tema" id="tema">
+                            <option id="fim4" value="claro">Claro</option>
+                            <option id="fim5" value="escuro">Escuro</option>
+                        </select>
+                    </div>
+                    <div class="fonte">
+                        <h4 id="fim6">Tamanho</h4>
+                        <select name="fonte" id="fonte">
+                            <option id="fim7" value="normal">Normal</option>
+                            <option id="fim8" value="grande">Grande</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contato">
+                    <h3 id="fim9">Informações de contato</h3>
+                    <ul>
+                        <li><a id="fim10" href="#">Endereço</a></li>
+                        <li><a id="fim11" href="#">Telefone</a></li>
+                        <li><a id="fim12" href="#">E-mail</a></li>
+                    </ul>
+                </div>
+                <div class="uteis">
+                    <h3 id="fim13">Links úteis</h3>
+                    <ul>
+                        <li><a id="fim14" href="#footer">Sobre nós</a></li>
+                        <li><a id="fim15" href="#">Contato</a></li>
+                        <li><a id="fim16" href="#">Política de privacidade</a></li>
+                        <li><a id="fim17" href="#">Termos de uso</a></li>
+                        <li><a id="fim18" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="inscrever">
+                    <h3 id="fim19">Inscreva-se</h3>
+                    <p id="fim20">Inscreva-se e receba notícias <br> de novas atualizações e assuntos<br> sobre o Pré-Modernismo</p>
+                    <div class="form">
+                        <form action="">
+                            <label for="">
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" name="email" id="email" required>
+                            </label>
+                            <div class="botao">
+                                <label for="">
+                                    <input id="fim21" type="button" value="Enviar">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="fim">
+                <p id="fim22">© 2025 Alvorada Literária. Todos os direitos reservados.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class='bx bxl-facebook' ></i></a></li>
+                    <li><a href="https://x.com"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="https://br.pinterest.com"><i class='bx bxl-pinterest' ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="voltar-topo" title="Voltar ao topo">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>
+
+    <script src="../JS/euclides.js"></script>
+</body>
+</html>

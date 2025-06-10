@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inscrição em Curso</title>
+	</head>
+	<body>
+	<b>
+	<header style="background-color: #0000FF">
+		<h1 style="text-align: center; color: #ffffff">Inscrição em Curso</h1>
+		<hr/>
+	</header>
+		<form action="#" method="POST">
+			<h2 style="text-align: center; background-color: #d3d3d3">Infirmações Pessoais</h2>
+			<hr/>
+			<label><b>Nome</b></label>
+			<br/>
+			<input type="text" id="nome" name="nome" required placeholder="Nome">
+			<br/>
+			<label><b>Sobrenome</b></label>
+			<br/>
+			<input type="text" id="Sobrenome" name="Sobrenome" required placeholder="Sobrenome">
+			
+			</br></br>
+			
+			<label><b>E-mail</b></label><br/>
+			<input type="email" id="email" name="email" required placeholder="email@email.com">
+			
+			<br/><br/>
+			
+			<label><b>Telefone</b></label></br>
+			<input type="tel" id="telefone" name="telefone" required placeholder="(xx)  xxxxx-xxxx"pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+			
+			<br/><br/>
+			
+			<label><b>Endereço</b></label>
+			<br/>
+			<input type="text" id="Endereco" name="Endereco" placeholder="Endereco">
+			<br/>
+			<label><b>Cidade</b></label>
+			<br/>
+			<input type="text" id="cidade" name="cidade" required placeholder="cidade">
+			<br/>
+			<label><b>Estado</b></label></br required>
+			<select name="estado" id="estado">
+				<option value="selecione">Estado</option>
+				<option value="em_1">AC</option>
+				<option value="em_2">AL</option>
+				<option value="em_3">AP</option>
+				<option value="em_4">AM</option>
+				<option value="em_5">BA</option>
+				<option value="em_6">CE</option>
+				<option value="em_7">DF</option>
+				<option value="em_8">ES</option>
+				<option value="em_9">GO</option>
+				<option value="em_10">MA</option>
+				<option value="em_11">MT</option>
+				<option value="em_12">MS</option>
+				<option value="em_13">MG</option>
+				<option value="em_14">PA</option>
+				<option value="em_15">PB</option>
+				<option value="em_16">PR</option>
+				<option value="em_17">PE</option>
+				<option value="em_18">PI</option>
+				<option value="em_19">RJ</option>
+				<option value="em_20">RN</option>
+				<option value="em_21">RS</option>
+				<option value="em_22">RO</option>
+				<option value="em_23">RR</option>
+				<option value="em_24">SC</option>
+				<option value="em_25">SP</option>
+				<option value="em_26">SE</option>
+				<option value="em_27">TO</option>
+			</select>
+			<br/>
+			<label><b>CEP</b></label>
+			<br/>
+			<input type="text" id="cep" name="cep" required placeholder="00000-000"pattern="[0-9]{5}-[0-9]{3}">
+			
+			<br/><br/>
+			
+			
+		</form>
+		</b>
+	</body>
+</html>

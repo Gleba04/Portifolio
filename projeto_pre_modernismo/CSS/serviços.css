@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;    
+}
+
+body{
+    background-repeat: no-repeat;
+    background-color: #f5f5dc;
+    background-position: top;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 80%;
+    margin-top: 2%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 3.5%;
+}
+
+.logo h2 a{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    background: linear-gradient(to right, gold, aqua, aqua, gold);
+    background-size: 200% 100%;
+    animation: degrade 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 200%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
+
+.menu ul{
+    display: flex;
+    margin-left: 35%;
+    gap: 8%;
+}
+
+.menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    padding: 5% 10%;
+    transition: 0.2s;
+    
+}
+
+.menu ul li a:hover{
+    cursor: pointer;
+    color: #787878;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.whatsapp a{
+    background-color: rgb(1, 188, 1);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px
+}
+
+.facebook a{
+    background-color: rgb(0, 106, 255);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px
+}
+
+.instagram a{
+    background: linear-gradient(45deg, #feda77, #dd2a7b, #515bd4);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.acount{
+    display: flex;
+    gap: 5%;
+}
+
+.entrar{
+    background-color: gold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.cadastrar:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.entrar:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.entrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cadastrar{
+    background-color: aqua;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.cadastrar span{
+    color: #fff;
+}
+
+.cadastrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.juntar{
+    display: flex;
+    gap: 10%;
+}
+
+.content1{
+    margin-top: 3%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    background-color: #fff;
+    width: 100%;
+    padding: 2% 1%;
+    top: 0;
+    position: fixed;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    text-align: center;
+}
+
+.container{
+    margin-bottom: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bloco1, .bloco2 {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 3%; 
+}
+
+.block {
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4%;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.block img{
+    width: 30%;
+    background-color: #f5f5dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.block h2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.block p{
+    text-align: justify;
+}
+
+.footer-button{
+    background-color: #fff;
+}
+
+.footer-widget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 5% 10%;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.acessibilidade{
+    display: flex;
+    flex-direction: column;
+}
+
+.acessibilidade h3{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acessibilidade select{
+    border-radius: 8px;
+    width: 110%;
+    box-shadow: none;
+    appearance: none;
+    padding: 1% 2%;
+    color: #787878;
+}
+
+.acessibilidade select:hover{
+    cursor: pointer;
+}
+
+.contato h3{
+    margin-bottom: 5%;
+}
+
+.contato ul{
+    list-style-type: none;
+}
+
+.contato ul li{
+    margin-bottom: 2%;
+}
+
+.contato ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #787878;
+}
+
+.contato ul li a:hover{
+    color: #d3d3d3;
+}
+
+.uteis h3{
+    margin-bottom: 5%;
+}
+
+.uteis ul{
+    list-style-type: none;
+}
+
+.uteis ul li{
+    margin-bottom: 2%;
+}
+
+.uteis ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #787878;
+}
+
+.uteis ul li a:hover{
+    color: #d3d3d3;
+}
+
+.inscrever h3{
+    margin-bottom: 5%;
+}
+
+.inscrever p{
+    color: #787878;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.form{
+    background-color: #d3d3d3;
+    border-radius: 30px;
+    padding-right: 11px;
+}
+
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form label #email{
+    border: none;
+    padding: 5% 10px;
+    background-color: #d3d3d3;
+}
+
+form label #email:focus{
+    outline: none;
+    border: none;
+}
+
+form label i{
+    color: #121212;
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+.botao input{
+    border: none;
+    background-color: rgb(0, 195, 78);
+    color: #fff;
+    padding: 15% 15%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.botao input:hover{
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
+.fim{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.fim p{
+    color: #787878;
+    font-size: 14px;
+}
+
+.fim ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-right: 1%;
+}
+
+.fim ul li a{
+    color: #787878;
+}
+
+.fim ul li a:hover{
+    color: #d3d3d3;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ddd;
+}
+
+.dark-theme header,
+.dark-theme .bloco {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+.dark-theme .menu ul li a{
+    color: #ddd;
+}
+
+.dark-theme .menu ul li a:hover{
+    color: #fff;
+}
+
+.dark-theme .cadastrar{
+    background-color: #1c4c4b;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.dark-theme .entrar{
+    background-color: #5a4a1a;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.dark-theme .entrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.dark-theme .cadastrar span{
+    color: #ddd;
+}
+
+.dark-theme .block{
+    background-color: #1e1e1e;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.dark-theme .block img{
+    background-color: #121212;
+}
+
+.dark-theme .logo h2 a{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    background: linear-gradient(to right, #5a4a1a, #1c4c4b, #1c4c4b, #5a4a1a);
+    background-size: 200% 100%;
+    animation: degrade 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.dark-theme .cadastrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.dark-theme .footer-button{
+    background-color: #1e1e1e;
+}
+
+.dark-theme .form{
+    background-color: #ddd;
+}
+
+.dark-theme form label #email{
+    border: none;
+    padding: 5% 10px;
+    background-color: #ddd;
+}
+
+.dark-theme form i{
+    color: #1e1e1e;
+}
+
+.dark-theme .botao input{
+    background-color: #145c3d;
+}
+
+.dark-theme .botao input:hover{
+    background-color: #2b2b2b;
+}
+
+#conteudo{
+    font-size: 1em;
+}
+
+.fonte-grande #conteudo h2{
+    font-size: 30px;
+}
+
+.fonte-grande #conteudo p{
+    font-size: 24px;
+}

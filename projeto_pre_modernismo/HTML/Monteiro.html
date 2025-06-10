@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvorada Literária | Monteiro Lobato</title>
+    <link rel="stylesheet" href="../CSS/monteiro.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="container_menu">
+                <div class="logo">
+                    <h2><a href="../index.html">Alvorada Literária</a></h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a id="menu1" href="../index.html">início</a></li>
+                        <li><a id="menu2" href="../HTML/Obras.html">Obras</a></li>
+                        <li><a id="menu7" href="../HTML/serviços.html">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="juntar">
+                    <div class="icons">
+                        <div class="whatsapp">
+                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        </div>
+                    </div>
+                    <div class="acount">
+                        <div class="entrar">
+                            <a id="menu5" href="../HTML/Entrar.html">Entrar</a>
+                        </div>
+                        <div class="cadastrar">
+                            <a id="menu6" href="../HTML/cadastro.html">Cadastrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main id="conteudo">
+        <div class="audio">
+            <div class="audio-player">
+                <img id="img-audio" src="../IMG/logo.png" alt="Logo">
+                <div class="controls">
+                  <button id="playPauseBtn">▶</button>
+                  <input type="range" id="progressBar" value="0" min="0" max="100">
+                  <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                </div>
+                <audio id="meuAudio" src="../AUDIO/Text to Speech (29)_join.mp3"></audio>
+            </div>
+        </div>
+        <div class="content-main">
+            <h1 id="conteudo1">Quem foi Monteiro Lobato?</h1>
+            <div class="left-obras">
+                <div class="conteudo">
+                    <p id="conteudo2">José Bento Renato Monteiro Lobato (1882–1948) foi um escritor, editor, tradutor, empresário e intelectual brasileiro. Ele é o criador do Sítio do Picapau Amarelo, marco da literatura infantil brasileira, e também teve forte atuação como crítico social e defensor da industrialização do Brasil.</p>
+                </div>
+                <img src="../IMG/3.png" alt="">
+            </div>
+            <div class="left">
+                <h2 id="conteudo3">Formação e carreira</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo4">Nasceu em Taubaté (SP).</li>
+                        <li id="conteudo5">Formou-se em Direito, mas logo abandonou a área jurídica.</li>
+                        <li id="conteudo6">Foi promotor de justiça, mas seu interesse mesmo era pela leitura, escrita e o desenvolvimento do país.</li>
+                        <li id="conteudo7">Fundou a Editora Monteiro Lobato & Cia, uma das primeiras editoras brasileiras.</li>
+                        <li id="conteudo8">Trabalhou como adido comercial nos EUA, onde teve contato com ideias de desenvolvimento industrial e tecnológico.</li>
+                    </ul>
+                </nav>
+                <h1 id="conteudo9">Obra principal</h1>
+                <h2 id="conteudo10">Literatura Infantil – Sítio do Picapau Amarelo</h2>
+                <div class="img">
+                    <img src="../IMG/obra (9).png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li id="conteudo11">Mistura folclore, mitologia, história e ciência com imaginação.</li>
+                        <li id="conteudo12">
+                            Criou personagens inesquecíveis:
+                        </li>
+                        <nav class="center">
+                            <ul>
+                                <li id="conteudo13">Emília – a boneca de pano falante, esperta e atrevida.</li>
+                                <li id="conteudo14">Pedrinho, Narizinho, Dona Benta, Tia Nastácia, Visconde de Sabugosa, entre outros.</li>
+                            </ul>
+                        </nav>
+                        <li id="conteudo15">
+                            Alguns livros famosos:
+                        </li>
+                        <nav class="center">
+                            <ul>
+                                <li id="conteudo16">Reinações de Narizinho (1931)</li>
+                                <li id="conteudo17">O Saci</li>
+                                <li id="conteudo18">Caçadas de Pedrinho</li>
+                                <li id="conteudo19">História do Mundo para Crianças</li>
+                                <li id="conteudo20">O Minotauro</li>
+                                <li id="conteudo21">Viagem ao Céu</li>
+                            </ul>
+                            <div class="img2">
+                                <img class="image" src="../IMG/obra (10).png" alt="">
+                                <img class="image" src="../IMG/obra (11).png" alt="">
+                                <img class="image" src="../IMG/obra (12).png" alt="">
+                                <img class="image" src="../IMG/obra (13).png" alt="">
+                                <img class="image" src="../IMG/obra (14).png" alt="">
+                                <img class="image" src="../IMG/obra (15).png" alt="">
+                            </div>
+                        </nav>
+                    </ul>
+                </nav>
+                <h2 id="conteudo22">Atuação política e industrial</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo23">Foi um dos primeiros a denunciar a exploração estrangeira do petróleo brasileiro.</li>
+                        <li id="conteudo24">Lançou o movimento “O Petróleo é Nosso”, que futuramente influenciaria a criação da Petrobras.</li>
+                        <li id="conteudo25">Defendia a industrialização, o progresso científico e a educação técnica como caminhos para o desenvolvimento do Brasil.</li>
+                    </ul>
+                </nav>
+                <h2 id="conteudo26">Polêmicas</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo27">Apesar da importância, algumas obras dele trazem estereótipos racistas, especialmente nas descrições de personagens como Tia Nastácia e no uso de termos e posturas hoje considerados preconceituosos.</li>
+                        <li id="conteudo28">Foi preso pelo governo de Getúlio Vargas por criticar o Estado Novo.</li>
+                        <li id="conteudo29">Teve visões nacionalistas intensas, mas também críticas à elite e ao atraso do país.</li>
+                    </ul>
+                </nav>
+                <h2 id="conteudo30">Estilo literário</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo31">Didático e direto, com muita influência de conteúdo educativo.</li>
+                        <li id="conteudo32">Misturava humor, crítica social, fantasia e conhecimento.</li>
+                        <li id="conteudo33">Grande criador de personagens marcantes.</li>
+                        <li id="conteudo34">Valorizava a cultura nacional, especialmente o folclore.</li>
+                    </ul>
+                </nav>
+                <h2 id="conteudo35">Legado</h2>
+                <nav>
+                    <ul>
+                        <li id="conteudo36">É o pai da literatura infantil brasileira.</li>
+                        <li id="conteudo37">Influenciou gerações com seus livros do Sítio, que viraram séries de TV, quadrinhos e animações.</li>
+                        <li id="conteudo38">Apesar das críticas modernas, é lembrado como um dos autores mais importantes do Brasil no século XX.</li>
+                        <li id="conteudo39">Foi um visionário, tanto como escritor quanto como pensador do desenvolvimento nacional.</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer-button">
+        <div class="footer-widget">
+            <div class="footer-top">
+            <div class="acessibilidade">
+                <h3 id="fim1"><i class='bx bx-universal-access' ></i> Acessibilidade</h3>
+                    <div class="traducao">
+                        <h4 id="fim2">Tradução</h4>
+                        <select name="traducao" id="languageSelector">
+                            <option value="pt">Português Brasil</option>
+                            <option value="en">English</option>
+                            <option value="es">Espanhol</option>
+                        </select>
+                    </div>
+                    <div class="tema">
+                        <h4 id="fim3">Tema</h4>
+                        <select name="tema" id="tema">
+                            <option id="fim4" value="claro">Claro</option>
+                            <option id="fim5" value="escuro">Escuro</option>
+                        </select>
+                    </div>
+                    <div class="fonte">
+                        <h4 id="fim6">Tamanho</h4>
+                        <select name="fonte" id="fonte">
+                            <option id="fim7" value="normal">Normal</option>
+                            <option id="fim8" value="grande">Grande</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contato">
+                    <h3 id="fim9">Informações de contato</h3>
+                    <ul>
+                        <li><a id="fim10" href="#">Endereço</a></li>
+                        <li><a id="fim11" href="#">Telefone</a></li>
+                        <li><a id="fim12" href="#">E-mail</a></li>
+                    </ul>
+                </div>
+                <div class="uteis">
+                    <h3 id="fim13">Links úteis</h3>
+                    <ul>
+                        <li><a id="fim14" href="#footer">Sobre nós</a></li>
+                        <li><a id="fim15" href="#">Contato</a></li>
+                        <li><a id="fim16" href="#">Política de privacidade</a></li>
+                        <li><a id="fim17" href="#">Termos de uso</a></li>
+                        <li><a id="fim18" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="inscrever">
+                    <h3 id="fim19">Inscreva-se</h3>
+                    <p id="fim20">Inscreva-se e receba notícias <br> de novas atualizações e assuntos<br> sobre o Pré-Modernismo</p>
+                    <div class="form">
+                        <form action="">
+                            <label for="">
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" name="email" id="email" required>
+                            </label>
+                            <div class="botao">
+                                <label for="">
+                                    <input id="fim21" type="button" value="Enviar">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="fim">
+                <p id="fim22">© 2025 Alvorada Literária. Todos os direitos reservados.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class='bx bxl-facebook' ></i></a></li>
+                    <li><a href="https://x.com"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="https://br.pinterest.com"><i class='bx bxl-pinterest' ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="voltar-topo" title="Voltar ao topo">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>
+
+    <script src="../JS/monteiro.js"></script>
+</body>
+</html>

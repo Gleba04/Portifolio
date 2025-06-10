@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Wet Paint", system-ui;
+}
+
+body{
+    background-image: url(abeia.gif);
+    background-size: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body h1{
+    background-color: rgb(182, 0, 0);
+    text-align: center;
+}
+
+body .h1{
+    margin-bottom: 5%;
+}
+
+body .tit{
+    margin-top: 20%;
+    background-color: rgb(182, 0, 0);
+    padding: 3%;
+}
+
+body img{
+    width: 49.2%;
+}
+
+#jumpscare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#jumpscare img {
+    width: 1920px;
+    height: auto;
+    max-width: 1920px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvorada Literária</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <!--Menu do site-->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <div class="content">
+        <header>
+            <div class="container_menu">
+                <div class="logo">
+                    <h2><a href="index.html">Alvorada Literária</a></h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a id="menu1" href="index.html">início</a></li>
+                        <li><a id="menu2" href="HTML/Obras.html">Obras</a></li>
+                        <li><a id="menu7" href="HTML/serviços.html">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="juntar">
+                    <div class="icons">
+                        <div class="whatsapp">
+                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        </div>
+                    </div>
+                    <div class="acount">
+                        <div class="entrar">
+                            <a id="menu5" href="HTML/Cadastrar.html">Entrar</a>
+                        </div>
+                        <div class="cadastrar">
+                            <a id="menu6" href="HTML/Cadastrar.html">Cadastrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!--Corpo do site-->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+
+    <main id="conteudo">
+        <div class="main">
+            <div class="container2">
+                <h1 id="titulo">Pré-Modernismo:<br> O Retrato de uma Época</h1>
+                <p id="titulo2">O Pré-Modernismo foi um período de transição na literatura 
+                brasileira, marcado pela crítica social, linguagem mais coloquial e 
+                personagens marginalizados. Destacaram-se autores como Euclides 
+                da Cunha, Lima Barreto e Monteiro Lobato.</p>
+                <a id="titulo3" href="#" onclick="redirecionar()">Saiba mais</a>
+            </div>
+        </div>
+        
+        <div class="audio-player">
+            <img id="img-audio" src="IMG/logo.png" alt="Logo">
+            <div class="controls">
+              <button id="playPauseBtn">▶</button>
+              <input type="range" id="progressBar" value="0" min="0" max="100">
+              <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            <audio id="meuAudio" src="AUDIO/Text to Speech.wav"></audio>
+        </div>
+
+        <div class="blocos3">
+            <div class="bloco">
+                <h2 id="titulo4">Euclides da Cunha</h2>
+                <p id="titulo5">Euclides da Cunha (1866–1909) foi um escritor e jornalista brasileiro, autor de "Os Sertões", que analisa a Guerra de Canudos. Morreu assassinado aos 43 anos.</p>
+                <img src="IMG/1.png" alt="Euclides da Cunha">
+                <a id="mais" href="HTML/Euclides.html">Ver mais</a>
+            </div>
+            <div class="bloco">
+                <h2 id="titulo6">Lima Barreto</h2>
+                <p id="titulo7">Lima Barreto (1881–1922) foi um escritor brasileiro que criticou o racismo e a elite. É autor de "Triste Fim de Policarpo Quaresma" e foi pouco valorizado em vida.</p>
+                <img src="IMG/2.png" alt="Lima Barreto">
+                <a id="mais2" href="HTML/Lima.html">Ver mais</a>
+            </div>
+            <div class="bloco">
+                <h2 id="titulo8">Monteiro Lobato</h2>
+                <p id="titulo9">Monteiro Lobato (1882–1948) foi um escritor brasileiro, famoso pela série "Sítio do Picapau Amarelo", que misturava folclore, educação infantil e crítica social.</p>
+                <img src="IMG/3.png" alt="Monteiro Lobato">
+                <a id="mais3" href="HTML/Monteiro.html">Ver mais</a>
+            </div>
+        </div>
+
+
+    </main> 
+
+    <!--Rodapé do site-->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------->
+
+    <footer id="footer"> 
+        <h1 id="foot">Sobre-Nós</h1>
+        <div class="blocos">
+            <div class="bloco1">
+                <div id="map"></div>
+            </div>
+            <div class="bloco2">
+                <div class="blocks">
+                    <img id="logo-bloco" src="IMG/logo.png" alt="Logo do site">
+                    <h3 id="foot2">Nosso Projeto</h3>
+                    <p id="foot3">Na "Alvorada Literária", descubra o pré-modernismo, <br>período em que vários autores abordaram a realidade social e política do Brasil.</p>
+                </div>
+                <div class="blocks2">
+                    <h3 id="foot4">Integrantes</h3>
+                    <div class="carrossel">
+                        <div class="slides">
+                            <img class="img-integrante" src="IMG/luan.png" alt="Integrante 1">
+                            <img class="img-integrante" src="IMG/leticia.png" alt="Integrante 2">
+                            <img class="img-integrante" src="IMG/miguel.png" alt="Integrante 3">
+                            <img class="img-integrante" src="IMG/fernanda.png" alt="Integrante 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-button">
+        <div class="footer-widget">
+            <div class="footer-top">
+            <div class="acessibilidade">
+                <h3 id="fim1"><i class='bx bx-universal-access' ></i> Acessibilidade</h3>
+                    <div class="traducao">
+                        <h4 id="fim2">Tradução</h4>
+                        <select name="traducao" id="languageSelector">
+                            <option value="pt">Português Brasil</option>
+                            <option value="en">English</option>
+                            <option value="es">Espanhol</option>
+                        </select>
+                    </div>
+                    <div class="tema">
+                        <h4 id="fim3">Tema</h4>
+                        <select name="tema" id="tema">
+                            <option id="fim4" value="claro">Claro</option>
+                            <option id="fim5" value="escuro">Escuro</option>
+                        </select>
+                    </div>
+                    <div class="fonte">
+                        <h4 id="fim6">Tamanho</h4>
+                        <select name="fonte" id="fonte">
+                            <option id="fim7" value="normal">Normal</option>
+                            <option id="fim8" value="grande">Grande</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contato">
+                    <h3 id="fim9">Informações de contato</h3>
+                    <ul>
+                        <li><a id="fim10" href="#">Endereço</a></li>
+                        <li><a id="fim11" href="#">Telefone</a></li>
+                        <li><a id="fim12" href="#">E-mail</a></li>
+                    </ul>
+                </div>
+                <div class="uteis">
+                    <h3 id="fim13">Links úteis</h3>
+                    <ul>
+                        <li><a id="fim14" href="#footer">Sobre nós</a></li>
+                        <li><a id="fim15" href="#">Contato</a></li>
+                        <li><a id="fim16" href="#">Política de privacidade</a></li>
+                        <li><a id="fim17" href="#">Termos de uso</a></li>
+                        <li><a id="fim18" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="inscrever">
+                    <h3 id="fim19">Inscreva-se</h3>
+                    <p id="fim20">Inscreva-se e receba notícias <br> de novas atualizações e assuntos<br> sobre o Pré-Modernismo</p>
+                    <div class="form">
+                        <form action="">
+                            <label for="">
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" name="email" id="email" required>
+                            </label>
+                            <div class="botao">
+                                <label for="">
+                                    <input id="fim21" type="button" value="Enviar">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="fim">
+                <p id="fim22">© 2025 Alvorada Literária. Todos os direitos reservados.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class='bx bxl-facebook' ></i></a></li>
+                    <li><a href="https://x.com"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="https://br.pinterest.com"><i class='bx bxl-pinterest' ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="voltar-topo" title="Voltar ao topo">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>    
+
+    <script src="JS/Script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro de Aluno</title>
+	</head>
+	<body><b>
+		<form action="#" method="POST">
+			<!--Campo de NOme do Aluno-->
+			<label style="color: #ff0000"><b>Nome Completo do Aluno</b></label>
+			<br/>
+			<input type="text" id="nome" name="nome" required placeholder="nome...">
+			
+			<br/><br/>
+			
+			<!--Email do Aluno-->
+			<label style="color: #ff0000">E-mail</b></label><br/>
+			<input type="email" id="email" name="email" required placeholder="email@email.com">
+			
+			<br/><br/>
+			
+			<!--Senha-->
+			<label style="color: #ff0000"><b>Senha</b><label><br/>
+			<input type="password" id="senha" name="senha" required>
+			
+			<br/><br/>
+			
+			<!--Confirmar Senha-->
+			<label style="color: #ff0000"><b>Confirmar Senha</b><label><br/>
+			<input type="password" id="confirmar senha" name="confirmar senha" required>
+			
+			<br/><br/>
+			
+			<!--Telefone-->
+			<label style="color: #ff0000"><b>Telefone:</b></label></br>
+			<input type="tel" id="telefone" name="telefone" required placeholder="(xx)  xxxxx-xxxx"pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+			
+			<br/><br/>
+			
+			<!--Data de nascimento-->
+			<label style="color: #ff0000"><b>Data de Nascimento:</b></label></br>
+			<input type="date" id="nascimento" name="nascimento" required>
+			
+			<br/><br/>
+			
+			<!--Idade-->
+			<label style="color: #ff0000"><b>Idade:</b></label></br>
+			<input type="number" id="idade" name="idade" min="14" max="19">
+			
+			<br/><br/>
+			
+			<!--Sexo-->
+			<label style="color: #ff0000"><b>Sexo:</b></label></br>
+			<input type="radio" id="masculino" name="sexo" value="Masculino" required>
+			<label><b>Masculino</b></label><br/>
+			<input type="radio" id="feminino" name="sexo" value="Feminino">
+			<label><b>Feminino</b></label><br/>
+			<input type="radio" id="nao_binario" name="sexo" value="Não Binário">
+			<label><b>Não Binário</b></label><br/>
+			<input type="radio" id="outros" name="sexo" value="Outros">
+			<label><b>Outros</b></label><br/>
+			
+			<br/><br/>
+			
+			<!--Série-->
+			<label style="color: #ff0000"><b>Selecione a série do aluno:</b></label></br required>
+			<select name="serie" id="serie">
+				<option value="selecione">Selecione...</option>
+				<option value="em_1">1° ano do ensino médio</option>
+				<option value="em_2">2° ano do ensino médio</option>
+				<option value="em_3">3° ano do ensino médio</option>
+			</select>
+			
+			<br/><br/>
+			
+			<!--Foto do aluno-->
+			<label><b>Foto do aluno:</b></label></br>
+			<input type="file" id="foto" name="foto">
+			
+			<br/><br/>
+			
+			<!--Comentários-->
+			<label><b>Reclamações, Sugestões e Elogios:</b></label></br>
+			<textarea id="comentarios" name="comentarios">Texto...</textarea>
+			
+			<br/><br/>
+			
+			<!--Campos de marcar-->
+			<input type="checkbox" id="termos" name="termos" required> 
+			<label><b>Li e aceito os termos e condições</b></label></br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">
+			<label><b>Aceito receber notificações</b></label></br>
+			
+			</br></br>
+
+			<!--Botão "Cadastrar"-->
+			<input type="submit" value="Cadastrar" style="background-color: #ff0000">
+		</form>
+		</b>
+	</body>
+</html>

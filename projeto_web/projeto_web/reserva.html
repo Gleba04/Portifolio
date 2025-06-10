@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Reserva em Restaurante</title>
+	</head>
+	<body>
+	<b>
+	<header style="background-color: #000000">
+		<h1 style="text-align: center; color: #ffffff">Fazer uma Reserva</h1>
+		<hr/>
+	</header>
+		<form action="#" method="POST">
+			<label style="color: #ff0000"><b>Nome</b></label>
+			<br/>
+			<input type="text" id="nome" name="nome" required placeholder="Nome">
+			<br/>
+			<label style="color: #ff0000"><b>Sobrenome</b></label>
+			<br/>
+			<input type="text" id="Sobrenome" name="Sobrenome" required placeholder="Sobrenome">
+			
+			</br></br>
+			
+			<label style="color: #ff0000"><b>E-mail</b></label><br/>
+			<input type="email" id="email" name="email" required placeholder="email@email.com">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Telefone</b></label></br>
+			<input type="tel" id="telefone" name="telefone" required placeholder="(xx)  xxxxx-xxxx"pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Quantidade de Pessoas</b></label></br>
+			<input type="number" id="Quantidade_de_pessoas" name="Quantidade_de_pessoas" min="1" max="20">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Data da Reserva</b></label><br/>
+			<input type="date" id="data_da_reserva" name="data_da_reserva" required>
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Horário da Reserva</b></label><br/>
+			<input type="time" id="horário_da_reserva" name="horário_da_reserva" required>
+			
+			<br/><br/>
+
+			<label style="color: #ff0000"><b>Preferências Alimentares</b></label>
+			<br/><br/>
+			<input type="radio" id="Vegetariano" name="sexo" value="Vegetariano">
+			<label>Vegetariano</label><br/>
+			<input type="radio" id="Vegetariano" name="sexo" value="Vegetariano">
+			<label>Vegano</label><br/>
+			<input type="radio" id="Vegano" name="sexo" value="Vegano">
+			<label>Sem Glútem</label><br/>
+			<input type="radio" id="glutem" name="sexo" value="glutem">
+			<label>Sem Carboidrato</label><br/>
+			<input type="radio" id="outros" name="sexo" value="Outros">
+			<label>Paleo</label><br/>
+			<input type="radio" id="outros" name="sexo" value="Outros">
+			<label>Não Tenho</label>
+
+			</br></br>
+			
+			<label style="color: #ff0000"><b>Restrições Alimentares</b></label>
+			<br/><br/>
+			<input type="radio" id="Vegetariano" name="sexo" value="Vegetariano">
+			<label>Alergia ao Amendoim</label><br/>
+			<input type="radio" id="masculino" name="sexo" value="Masculino">
+			<label>Intolerância à Lactose</label><br/>
+			<input type="radio" id="feminino" name="sexo" value="Feminino">
+			<label>Doença Celíaca</label><br/>
+			<input type="radio" id="nao_binario" name="sexo" value="Não Binário">
+			<label>Alergia a Frutos do Mar</label><br/>
+			<input type="radio" id="outros" name="sexo" value="Outros">
+			<label>Diabetes</label><br/>
+			<input type="radio" id="outros" name="sexo" value="Outros">
+			<label>Não Tenho</label>
+
+			</br></br>
+			
+			<label><b>Comentários Adicionais</b></label></br>
+			<textarea id="comentarios" name="comentarios" placeholder="Comentários"></textarea>
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Tipo de Evento</b></label></br required>
+			<select name="serie" id="serie">
+				<option value="selecione"></option>
+				<option value="em_1" >Aniversário</option>
+				<option value="em_2">Jantar de Negócios</option>
+				<option value="em_3">Reunião de Família</option>
+				<option value="em_4">Aniversário de Casamento</option>
+				<option value="em_5">Despedida de Solteiro/Solteira</option>
+			</select>
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Necessidades Especiais</b></label>
+			<br/><br/>
+			<input type="radio" id="Vegetariano" name="sexo" value="Vegetariano">
+			<label>Deficiência Física</label><br/>
+			<input type="radio" id="masculino" name="sexo" value="Masculino">
+			<label>Deficiência Intelectual</label><br/>
+			<input type="radio" id="feminino" name="sexo" value="Feminino">
+			<label>Deficiência Sensorial</label><br/>
+			<input type="radio" id="nao_binario" name="sexo" value="Não Binário">
+			<label>Trantornos de Saúde Mental</label><br/>
+			<input type="radio" id="outros" name="sexo" value="Outros">
+			<label>Não Tenho</label>
+
+			</br></br>
+			
+			<label style="color: #ff0000"><b>Preferência de Assento</b></label></br>
+			<select name="serie" id="serie">
+				<option value="selecione"></option>
+				<option value="em_1" >Assento no Corredor</option>
+				<option value="em_2">Assento na Janela</option>
+				<option value="em_3">Assento Perto da Saída</option>
+				<option value="em_4">Assento com Maior Espaço para as Pernas</option>
+			</select>
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000"><b>Código Promocional</b></label>
+			<br/>
+			<input type="text" id="codigo" name="codigo" required placeholder="Código">
+			
+			<br/><br/>
+
+			<input type="checkbox" id="termos" name="termos" required> 
+			<label>Li e aceito os termos e condições</label></br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">
+			<label>Aceito receber notificações</label></br>
+			
+			</br></br>
+			
+			<label style="color: #ff0000"><b>Cidade</b></label>
+			<br/>
+			<input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+			
+			</br></br>			
+			
+			<label style="color: #ff0000"><b>CEP</b></label>
+			<br/>
+			<input type="text" id="cep" name="cep" required placeholder="00000-000"pattern="[0-9]{5}-[0-9]{3}">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000">País</label></br>
+			<select name="serie" id="serie">
+				<option value="selecione"></option>
+				<option value="em_1" >Brasil</option>
+				<option value="em_2">Portugal</option>
+				<option value="em_3">Canadá</option>
+				<option value="em_4">México</option>
+			</select>
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000">Referência</label>
+			<br/>
+			<input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+			
+			<br/><br/>
+			
+			<input type="submit" value="Enviar" style="background-color: #d3d3d3">
+			
+		</form>
+		</b>
+	</body>
+</html>

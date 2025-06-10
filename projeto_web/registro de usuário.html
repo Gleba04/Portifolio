@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro</title>
+	</head>
+	<body>
+	<b>
+		<form action="#" method="POST">
+			<label style="color: #ff0000">Nome</label>
+			<br/>
+			<input type="text" id="nome" name="nome" required placeholder="nome">
+			<br/>
+			<label style="color: #ff0000">Sobrenome</label>
+			<br/>
+			<input type="text" id="sobrenome" name="sobrenome" required placeholder="sobrenome">
+			
+			</br></br>
+			
+			<label style="color: #ff0000">Data de Nascimento:</label></br>
+			<input type="date" id="nascimento" name="nascimento" required>
+			
+			</br></br>
+			
+			<label style="color: #ff0000">Sexo:</label></br>
+			<input type="radio" id="masculino" name="sexo" value="Masculino" required>
+			<label>Masculino</label><br/>
+			<input type="radio" id="feminino" name="sexo" value="Feminino">
+			<label>Feminino</label><br/>
+			<input type="radio" id="prefiro_nao_dizer" name="sexo" value="prefiro_nao_dizer">
+			<label>Prefiro não dizer</label><br/>
+			
+			</br></br>
+			
+			<label style="color: #ff0000">E-mail</label><br/>
+			<input type="email" id="email" name="email" required placeholder="email@email.com">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000">Telefone:</label></br>
+			<input type="tel" id="telefone" name="telefone" required placeholder="(xx)  xxxxx-xxxx"pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000">Endereço</label>
+			<br/>
+			<input type="text" id="Endereco" name="Endereco" placeholder="Endereco">
+			<br/>
+			<label style="color: #ff0000">Cidade</label>
+			<br/>
+			<input type="text" id="cidade" name="cidade" required placeholder="cidade">
+			<br/>
+			<label style="color: #ff0000">Estado</label></br required>
+			<select name="estado" id="estado">
+				<option value="selecione">Estado</option>
+				<option value="em_1">AC</option>
+				<option value="em_2">AL</option>
+				<option value="em_3">AP</option>
+				<option value="em_4">AM</option>
+				<option value="em_5">BA</option>
+				<option value="em_6">CE</option>
+				<option value="em_7">DF</option>
+				<option value="em_8">ES</option>
+				<option value="em_9">GO</option>
+				<option value="em_10">MA</option>
+				<option value="em_11">MT</option>
+				<option value="em_12">MS</option>
+				<option value="em_13">MG</option>
+				<option value="em_14">PA</option>
+				<option value="em_15">PB</option>
+				<option value="em_16">PR</option>
+				<option value="em_17">PE</option>
+				<option value="em_18">PI</option>
+				<option value="em_19">RJ</option>
+				<option value="em_20">RN</option>
+				<option value="em_21">RS</option>
+				<option value="em_22">RO</option>
+				<option value="em_23">RR</option>
+				<option value="em_24">SC</option>
+				<option value="em_25">SP</option>
+				<option value="em_26">SE</option>
+				<option value="em_27">TO</option>
+			</select>
+			<br/>
+			<label style="color: #ff0000">CEP</label>
+			<br/>
+			<input type="text" id="cep" name="cep" required placeholder="00000-000"pattern="[0-9]{5}-[0-9]{3}">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000">Nome de Usuário</label>
+			<br/>
+			<input type="text" id="nome_de_usuario" name="nome_de_usuario" required>
+			
+			</br></br>
+			
+			<label style="color: #ff0000">Senha<label><br/>
+			<input type="password" id="senha" name="senha" required>
+			<br/>
+			<label style="color: #ff0000">Confirmar Senha<label><br/>
+			<input type="password" id="confirmar senha" name="confirmar senha" required>
+			
+			<br/><br/>
+			
+			<label>Foto de Perfil</label></br>
+			<input type="file" id="foto_de_perfil" name="foto_de_perfil">
+			
+			<br/><br/>
+			
+			<label style="color: #ff0000">Hobbies</label><br/>
+			<input type="checkbox" id="Leitura" name="Leitura" required> 
+			<label>Leitura</label></br>
+			<input type="checkbox" id="Fotografia" name="Fotografia">
+			<label>Fotografia</label></br>
+			<input type="checkbox" id="Jardinagem" name="Jardinagem">
+			<label>Jardinagem</label></br>
+			<input type="checkbox" id="Culinária" name="Culinária">
+			<label>Culinária</label></br>
+			<input type="checkbox" id="Caminhada" name="Caminhada">
+			<label>Caminhada</label></br>
+			
+			</br></br>
+			
+			<label style="color: #ff0000">Níveis de educação</label></br required>
+			<select name="serie" id="serie">
+				<option value="selecione">Selecione</option>
+				<option value="em_1">Imcompleto</option>
+				<option value="em_2">Completo</option>
+				<option value="em_3">Pós Graduação</option>
+			</select>
+			
+			</br></br>
+			
+			<label style="color: #ff0000">Profissão</label>
+			<br/>
+			<input type="text" id="profissão" name="profissão">
+			
+			</br></br>
+			
+			<label>Biografia</label></br>
+			<textarea id="Biografia" name="Biografia"></textarea>
+			
+			</br></br>
+			
+			<input type="checkbox" id="termos" name="termos" required> 
+			<label>Li e aceito os termos e condições</label></br>
+			<input type="checkbox" id="notificacoes" name="notificacoes"> 
+			<label>Receber notificações</label></br>
+			
+			</br></br>
+
+			<input type="submit" value="Cadastrar" style="background-color: #ffffff">
+			
+		</form>
+		</b>
+	</body>
+</html>

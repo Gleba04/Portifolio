@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inscrição em Curso</title>
+	</head>
+	<body>
+	<header>
+		<h1>Inscrição em Curso</h1>
+		<hr/>
+	</header>
+	<form action="#" method="POST">
+		<h2>Informações Pessoais</h2>
+		<hr/>
+		<label for="nome"><b>Nome</b></label><br/>
+		<input type="text" id="nome" name="nome" required placeholder="Nome"><br/>
+		<label for="sobrenome"><b>Sobrenome</b></label><br/>
+		<input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome"><br/><br/>
+
+		<label for="email"><b>E-mail</b></label><br/>
+		<input type="email" id="email" name="email" required placeholder="email@email.com"><br/><br/>
+
+		<label for="telefone"><b>Telefone</b></label><br/>
+		<input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"><br/><br/>
+
+		<label for="endereco"><b>Endereço</b></label><br/>
+		<input type="text" id="endereco" name="endereco" placeholder="Endereço"><br/>
+		<label for="cidade"><b>Cidade</b></label><br/>
+		<input type="text" id="cidade" name="cidade" required placeholder="Cidade"><br/>
+		<label for="estado"><b>Estado</b></label><br/>
+		<select name="estado" id="estado">
+        <option value="selecione">Estado</option>
+        <!-- Adicione os estados aqui -->
+		</select><br/>
+		<label for="cep"><b>CEP</b></label><br/>
+		<input type="text" id="cep" name="cep" required placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}"><br/><br/>
+
+		<label for="nascimento"><b>Data de Nascimento:</b></label><br/>
+		<input type="date" id="nascimento" name="nascimento" required><br/><br/>
+
+		<label><b>Gênero</b></label><br/>
+		<input type="radio" id="masculino" name="sexo" value="Masculino" required><label for="masculino">Masculino</label><br/>
+		<input type="radio" id="feminino" name="sexo" value="Feminino"><label for="feminino">Feminino</label><br/>
+		<input type="radio" id="prefiro_nao_dizer" name="sexo" value="prefiro_nao_dizer"><label for="prefiro_nao_dizer">Prefiro não dizer</label><br/><br/>
+
+		<hr/>
+		<h2>Educação e Carreira</h2>
+		<hr/>
+		<label for="escolaridade"><b>Escolaridade</b></label><br/>
+		<select name="escolaridade" id="escolaridade">
+        <option value="selecione">Escolaridade</option>
+        <!-- Adicione as opções de escolaridade aqui -->
+		</select><br/><br/>
+
+		<label for="profissao"><b>Profissão</b></label><br/>
+		<input type="text" id="profissao" name="profissao" placeholder="Sua Profissão"><br/><br/>
+
+		<label for="experiencia"><b>Experiência Anterior</b></label><br/>
+		<input type="text" id="experiencia" name="experiencia" placeholder="Experiência anterior"><br/><br/>
+
+		<hr/>
+		<h2>Motivação e Expectativas</h2>
+		<hr/>
+		<label for="motivacao"><b>Motivação para o Curso</b></label><br/>
+		<textarea id="motivacao" name="motivacao" placeholder="Motivação"></textarea><br/>
+		<label for="expectativas"><b>Expectativas</b></label><br/>
+		<textarea id="expectativas" name="expectativas" placeholder="Expectativas"></textarea><br/><br/>
+
+		<hr/>
+		<h2>Preferências e Informações Adicionais</h2>
+		<hr/>
+		<input type="checkbox" id="termos" name="termos" required> <label for="termos">Li e Aceito os Termos e Condições</label><br/>
+		<input type="checkbox" id="notificacoes" name="notificacoes"> <label for="notificacoes">Aceito Receber Notificações por E-mail</label><br/><br/>
+
+		<label for="informatica"><b>Nível de Conhecimento em Informática</b></label><br/>
+		<select name="informatica" id="informatica">
+        <option value="selecione">Selecione</option>
+        <!-- Adicione as opções de conhecimento em informática aqui -->
+		</select><br/><br/>
+
+		<label for="horario"><b>Disponibilidade de Horário</b></label><br/>
+		<input type="time" id="horario" name="horario" required><br/><br/>
+
+		<label for="referencia"><b>Referência de Amigos</b></label><br/>
+		<input type="text" id="referencia" name="referencia" placeholder="Referência"><br/><br/>
+
+		<label for="hobbies"><b>Hobbies</b></label><br/>
+		<input type="text" id="hobbies" name="hobbies" placeholder="Hobbies"><br/><br/>
+
+		<label for="estado_civil"><b>Estado Civil</b></label><br/>
+		<select name="estado_civil" id="estado_civil">
+        <option value="selecione">Estado civil</option>
+        <!-- Adicione as opções de estado civil aqui -->
+		</select><br/><br/>
+
+		<label for="idiomas"><b>Idiomas</b></label><br/>
+		<select name="idiomas" id="idiomas">
+        <option value="selecione">Idiomas</option>
+        <!-- Adicione as opções de idiomas aqui -->
+		</select><br/><br/>
+
+		<label for="pagamento"><b>Método de Pagamento Preferido</b></label><br/>
+		<select name="pagamento" id="pagamento">
+        <option value="selecione">Selecione</option>
+        <!-- Adicione as opções de pagamento aqui -->
+		</select><br/><br/>
+
+		<label for="observacoes"><b>Outras Observações</b></label><br/>
+		<textarea id="observacoes" name="observacoes" placeholder="Observações"></textarea><br/><br/>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

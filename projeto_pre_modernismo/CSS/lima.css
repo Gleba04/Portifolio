@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;    
+}
+
+body{
+    background: url(../IMG/Fundo.png);
+    background-repeat: no-repeat;
+    background-color: #f5f5dc;
+    background-position: top;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 80%;
+    margin-top: 2%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 3.5%;
+}
+
+.logo h2 a{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    background: linear-gradient(to right, gold, aqua, aqua, gold);
+    background-size: 200% 100%;
+    animation: degrade 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 200%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
+
+.menu ul{
+    display: flex;
+    margin-left: 20%;
+    gap: 8%;
+}
+
+.menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    padding: 5% 10%;
+    transition: 0.2s;
+    
+}
+
+.menu ul li a:hover{
+    cursor: pointer;
+    color: #787878;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.whatsapp a{
+    background-color: rgb(1, 188, 1);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px
+}
+
+.facebook a{
+    background-color: rgb(0, 106, 255);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px
+}
+
+.instagram a{
+    background: linear-gradient(45deg, #feda77, #dd2a7b, #515bd4);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.acount{
+    display: flex;
+    gap: 5%;
+}
+
+.entrar{
+    background-color: gold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.cadastrar:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.entrar:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.entrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cadastrar{
+    background-color: aqua;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.cadastrar span{
+    color: #fff;
+}
+
+.cadastrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.juntar{
+    display: flex;
+    gap: 10%;
+}
+
+.audio{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+  
+  .audio-player img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #playPauseBtn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #progressBar {
+    width: 200px;
+    height: 5px;
+    background: #000;
+    appearance: none;
+    border-radius: 5px;
+  }
+
+  #progressBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: #fff;
+    margin-top: 5%;
+    border-radius: 20px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title h1{
+    margin-bottom: 2%;
+}
+
+.title p{
+    font-size: 20px;
+    width: 90%;
+    text-align: justify;
+}
+
+.title img{
+    width: 50%;
+    border-radius: 8px;
+}
+
+.left{
+    margin-top: 3%;
+}
+
+.left h2{
+    margin-bottom: 1%;
+    margin-top: 2%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.left h1{
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.left p{
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+.left nav ul li{
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+
+.left nav ol li{
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+
+.left nav{
+    margin-bottom: 3%;
+}
+
+.left-obras{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 2%;
+}
+
+.left-obras p{
+    margin-bottom: 3%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.center{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+img{
+    border-radius: 8px;
+}
+
+.footer-button{
+    background-color: #fff;
+}
+
+.footer-widget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 5% 10%;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.acessibilidade{
+    display: flex;
+    flex-direction: column;
+}
+
+.acessibilidade h3{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acessibilidade select{
+    border-radius: 8px;
+    width: 110%;
+    box-shadow: none;
+    appearance: none;
+    padding: 1% 2%;
+    color: #787878;
+}
+
+.acessibilidade select:hover{
+    cursor: pointer;
+}
+
+.contato h3{
+    margin-bottom: 5%;
+}
+
+.contato ul{
+    list-style-type: none;
+}
+
+.contato ul li{
+    margin-bottom: 2%;
+}
+
+.contato ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #787878;
+}
+
+.contato ul li a:hover{
+    color: #d3d3d3;
+}
+
+.uteis h3{
+    margin-bottom: 5%;
+}
+
+.uteis ul{
+    list-style-type: none;
+}
+
+.uteis ul li{
+    margin-bottom: 2%;
+}
+
+.uteis ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #787878;
+}
+
+.uteis ul li a:hover{
+    color: #d3d3d3;
+}
+
+.inscrever h3{
+    margin-bottom: 5%;
+}
+
+.inscrever p{
+    color: #787878;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.form{
+    background-color: #d3d3d3;
+    border-radius: 30px;
+    padding-right: 11px;
+}
+
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form label #email{
+    border: none;
+    padding: 5% 10px;
+    background-color: #d3d3d3;
+}
+
+form label #email:focus{
+    outline: none;
+    border: none;
+}
+
+form label i{
+    color: #121212;
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+.botao input{
+    border: none;
+    background-color: rgb(0, 195, 78);
+    color: #fff;
+    padding: 15% 15%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.botao input:hover{
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
+.fim{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.fim p{
+    color: #787878;
+    font-size: 14px;
+}
+
+.fim ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-right: 1%;
+}
+
+.fim ul li a{
+    color: #787878;
+}
+
+.fim ul li a:hover{
+    color: #d3d3d3;
+}
+
+.voltar-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 195, 78);
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px #d3d3d3;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.voltar-topo:hover {
+    transform: scale(1.1);
+}
+
+body.dark-theme {
+    background: url(../IMG/Fundo\ \(2\).png); 
+    background-repeat: no-repeat;
+    background-color: #121212;
+    background-position: top;
+    color: #ddd;
+}
+
+.dark-theme header,
+.dark-theme .bloco {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+.dark-theme .menu ul li a{
+    color: #ddd;
+}
+
+.dark-theme .menu ul li a:hover{
+    color: #fff;
+}
+
+.dark-theme .cadastrar{
+    background-color: #1c4c4b;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.dark-theme .entrar{
+    background-color: #5a4a1a;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.dark-theme .entrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.dark-theme .cadastrar span{
+    color: #ddd;
+}
+
+.dark-theme .logo h2 a{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    background: linear-gradient(to right, #5a4a1a, #1c4c4b, #1c4c4b, #5a4a1a);
+    background-size: 200% 100%;
+    animation: degrade 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.dark-theme .cadastrar a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.dark-theme .audio-player {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+}
+
+.dark-theme .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-theme #playPauseBtn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.2s ease;
+}
+
+.dark-theme #progressBar {
+    width: 200px;
+    height: 5px;
+    background: #ddd;
+    appearance: none;
+    border-radius: 5px;
+}
+
+.dark-theme #progressBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dark-theme .footer-button{
+    background-color: #1e1e1e;
+}
+
+.dark-theme .form{
+    background-color: #ddd;
+}
+
+.dark-theme form label #email{
+    border: none;
+    padding: 5% 10px;
+    background-color: #ddd;
+}
+
+.dark-theme form i{
+    color: #1e1e1e;
+}
+
+.dark-theme .botao input{
+    background-color: #145c3d;
+}
+
+.dark-theme .botao input:hover{
+    background-color: #2b2b2b;
+}
+
+.dark-theme .voltar-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #145c3d;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px #131313;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dark-theme .voltar-topo:hover {
+    transform: scale(1.1);
+}
+
+.dark-theme .content-main{
+    background-color: #1e1e1e;
+}
+
+#conteudo{
+    font-size: 1em;
+}
+
+.fonte-grande #conteudo h1{
+    font-size: 45px;
+}
+
+.fonte-grande #conteudo h2{
+    font-size: 35px;
+}
+
+.fonte-grande #conteudo li{
+    font-size: 25px;
+}
+
+.fonte-grande #conteudo p{
+    font-size: 25px;
+}
